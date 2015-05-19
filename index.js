@@ -12,6 +12,6 @@ function maximize() {
 	ipc.send('asynchronous-message', 'maximize-window');
 }
 
-function restore() {
-	ipc.send('asynchronous-message', 'restore-window');
+function unmaximize() {
+	ipc.send('asynchronous-message', 'unmaximize-window');
 }

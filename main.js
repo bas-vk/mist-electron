@@ -46,7 +46,7 @@ ipc.on('asynchronous-message', function(event, msg) {
 		mainWindow.minimize();
 	} else if (msg == 'maximize-window') {
 		mainWindow.maximize();
-	} else if (msg == 'restore-window') {
-		mainWindow.restore();
+	} else if (msg == 'unmaximize-window') {
+		mainWindow.unmaximize();
 	}
 });
