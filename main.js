@@ -48,5 +48,9 @@ ipc.on('asynchronous-message', function(event, msg) {
 		mainWindow.maximize();
 	} else if (msg == 'unmaximize-window') {
 		mainWindow.unmaximize();
+	} else if (msg == 'enter-fullscreen-window') {
+		mainWindow.setFullScreen(true);
+	} else if (msg == 'leave-fullscreen-window') {
+		mainWindow.setFullScreen(false);
 	}
 });

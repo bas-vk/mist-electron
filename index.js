@@ -15,3 +15,12 @@ function maximize() {
 function unmaximize() {
 	ipc.send('asynchronous-message', 'unmaximize-window');
 }
+
+function enterFullscreen() {
+	ipc.send('asynchronous-message', 'enter-fullscreen-window');
+}
+
+function leaveFullscreen() {
+	ipc.send('asynchronous-message', 'leave-fullscreen-window');
+}
+
